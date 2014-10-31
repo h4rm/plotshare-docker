@@ -16,4 +16,6 @@ RUN sudo make install
 RUN rm -rf /home/*
 RUN apt-get clean
 
+COPY config/lighttpd.conf /etc/lighttpd/lighttpd.conf
+
 EXPOSE 80
